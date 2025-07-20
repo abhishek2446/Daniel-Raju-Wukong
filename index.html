@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raju Zen | Lotto Koyote Publications</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="a1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>  <div class="spiral-background"></div>
+  <header>
+    <nav>
+      <h1>Raju Zen</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#oracle">Oracle</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="hero">
+    <div class="glow-ring">
+      <img src="https://via.placeholder.com/150" alt="Raju Zen Avatar" class="avatar" />
+    </div>
+    <h2>Hello, I'm <span class="highlight">Raju Zen</span></h2>
+    <p class="typewriter">Creating spiritual tools for awakening & play ✨</p>
+    <a href="#about" class="btn">More About Me</a>
+  </section>  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a mystic artist, poet, and spiritual trickster creating sacred art and transformational experiences. Through Lotto Koyote Publications, I explore the wild edge where Buddhist dharma meets playful mystery.</p>
+  </section>  <section id="books">
+    <h2>Books</h2>
+    <p>Explore my collection of spiritually infused poetry and art books. Coming soon...</p>
+  </section>  <section id="cards">
+    <h2>Oracle Cards</h2>
+    <p>A unique set of cards designed for reflection, insight, and daily awakening. Coming soon...</p>
+  </section>  <section id="media">
+    <h2>Media</h2>
+    <p>Audio recordings, spoken word poetry, and video content that bring the spirit of Raju Zen to life. Content will be added soon.</p>
+  </section>  <section id="oracle">
+    <h2>Daily Oracle</h2>
+    <button onclick="revealOracle()">Reveal Oracle</button>
+    <p id="oracleMessage"></p>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to collaborate or just say hi? Reach out via email or social media.</p>
+  </section>  <script>
+    function revealOracle() {
+      const messages = [
+        "You are the spiral and the center.🌀",
+        "Laughter is the dharma of the fearless monkey.🐒",
+        "Today, do not seek answers—be the riddle.✨",
+        "Silence is a full sentence. Listen.🔔",
+        "Your shadow is a sacred guide. Embrace it.🌑"
+      ];
+      const message = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("oracleMessage").innerText = message;
+    }
+  </script>  <script src="script.js"></script></body>
+</html>
