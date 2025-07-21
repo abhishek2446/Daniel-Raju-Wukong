@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -14,6 +15,43 @@ body {
     letter-spacing: 0.02em;
     transition: background 0.6s;
     }
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+  .hero-text {
+    font-size: 18px;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 769px) {
+  .menu {
+    flex-direction: row;
+  }
+}
+
+
+
 
 .row {
     display: flex;
@@ -23,56 +61,50 @@ body {
 
 .col-1 {
     flex-basis: 35%;
+    margin-top: 40px;
     display: flex;
+    width: 100%;
 }
 
 
 .col-2 {
+    margin-top: 70px;
     flex-basis: 60%;
 }
 #header {
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .header-text {
-    position: center;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-bottom: auto;
-    text-align: center;
-    border-radius: 32px;
-    max-width: 900px;
-    padding: 40px 90px;
-    animation: fadeInDown 1.2s cubic-bezier(.77,0,.18,1) both;
+    
+    max-width: 1500px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 7px 20px 0 #fff;
+    padding: 60px 20px;
+    animation: fadeInDown 1s cubic-bezier(.77,0,.18,1) both;
 }
-.header-text h2 {
-    font-size: 28px;
-    color: red;
-    font-weight: bold;
-    margin-top: auto;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 12px #ffb34722;
-    animation: glowText 1s infinite alternate;
+.header-text h2{
+    color: cyan;
+    font-size: 35px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    animation: glowText 2s infinite alternate;
 }
 .header-text h1 {
-    font-size: 64px;
-    margin-top: 0;
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-family: 'Georgia', serif;
-    letter-spacing: 5px;
-    text-shadow: 0 4px 24px #ffb34722;
-    animation: glowText 1s infinite alternate;
+    font-size: 50px;
+    color: red;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    animation: glowText 2s infinite alternate;
 }
 @keyframes glowText {
     0% {
-        text-shadow: 0 4px 24px cyan;
+        text-shadow: 0 5px 20px orange;
     }
     100% {
-        text-shadow: 0 8px 32px yellow, 0 2px 12px red;
+        text-shadow: 0 7px 25px #fff, 0 2px 8px #fff;
     }
 }
 
@@ -124,7 +156,7 @@ body {
   padding: 100px 20px 60px;
 }
 .glow-ring {
-    margin-top:135px;
+    margin-top:150px;
     margin: auto;
   width: 360px;
   height: 360px;
@@ -163,14 +195,14 @@ body {
 
 nav {
     display: flex;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 2px 16px 0 rgba(108,45,199,0.06);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 7px 20px 0 #fff;
     margin-top: 0px;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav ul li {
@@ -182,15 +214,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: red;
+    color: #fff;
     text-decoration: none;
     font-size: 19px;
     position: relative;
     letter-spacing: 0.04em;
     transition: color 0.3s, background 0.3s;
-    padding: 8px 18px;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #fff 60%, #f7e7ff 100%);
+    padding: 8px 10px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, black 60%, black 100%);
     box-shadow: 0 2px 8px 0 rgba(108,45,199,0.04);
 }
 
@@ -208,9 +240,9 @@ nav ul li a::after {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #fff;
-    background: linear-gradient(90deg, #ffb347 0%, #6c2dc7 100%);
-    box-shadow: 0 4px 16px 0 rgba(255,176,71,0.10);
+    color: black;
+    background: linear-gradient(90deg, #ffb347 0%, red 100%);
+    box-shadow: 0 4px 20px 0 #fff;
 }
 
 nav ul li a:hover::after,
@@ -449,9 +481,8 @@ nav ul li a.active::after {
 
 /* ---------Services---------  */
 #services {
-    padding: 30px 0;
-    color: #6c2dc7;
-    background: #fff;
+    padding: 3px 0;
+    color: red;
     border-radius: 24px;
     margin: 40px 0;
     box-shadow: 0 4px 32px 0 rgba(255,176,71,0.08);
@@ -462,19 +493,24 @@ nav ul li a.active::after {
     grid-gap: 80px;
     margin-top: 50px;
 }
+.services-list h1 {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
 .services-list h2 {
     font-size: larger;
     font-weight: bold;
-    color: #6c2dc7;
+    color: #fff;
 }
 .services-list div{
-    background: grey;
+    background-color: white;
     padding: 40px;
     font-size: 15px;
     font-weight: 400;
     border-radius: 18px;
     box-shadow: 0 2px 16px 0 rgba(108,45,199,0.08);
-    color: #23234b;
+    color: black;
     transition: background 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 .services-list div:hover {
