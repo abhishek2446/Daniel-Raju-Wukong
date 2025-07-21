@@ -449,23 +449,27 @@ nav ul li a.active::after {
 
 #contact .container h1 {
     font-size: 100px;
-    font-weight: 600;
-    color: white;
+    font-weight: 500;
+    color: black;
 }
 
 #contact .container p {
     font-size: 40px;
+    background-color: #fff;
     margin-bottom: 20px;
 }
 
 #contact .container ul {
     list-style: none;
     padding: 0;
+    
 }
 
 #contact .container ul li {
     display: inline-block;
     margin: 0 15px;
+    background-color: #fff;
+    
 }
 
 #contact .container ul li a {
@@ -476,6 +480,7 @@ nav ul li a.active::after {
 #contact .container ul li a i {
     margin-right: 10px;
     transition: color 0.3s;
+    
 }
 #contact .container ul li a:hover {
     color: blue;
