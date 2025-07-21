@@ -86,7 +86,7 @@ img, video {
     animation: fadeInDown 1s cubic-bezier(.77,0,.18,1) both;
 }
 .header-text h2{
-    color: cyan;
+    color: yellow;
     font-size: 35px;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     letter-spacing: 2px;
