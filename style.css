@@ -441,7 +441,6 @@ nav ul li a.active::after {
     border-radius: 24px;
     margin: 40px 0;
     box-shadow: 0 4px 32px 0 #fff;
-    background: linear-gradient(135deg, #f7e7ff 0%, #fff 100%);
 }
 
 #contact .container {
@@ -449,9 +448,9 @@ nav ul li a.active::after {
 }
 
 #contact .container h1 {
-    font-size: 140px;
+    font-size: 100px;
     font-weight: 600;
-    color: blue;
+    color: white;
 }
 
 #contact .container p {
